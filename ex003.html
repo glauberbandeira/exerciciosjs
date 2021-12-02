@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usando o prompt() e o alert() juntos</title>
+
+  <style>
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+      width: 200px;
+      height: 100px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border: 0;
+      border-radius: 30px;
+      cursor: pointer;
+      background: #e4f5fc; /* Old browsers */
+      background: linear-gradient(to bottom,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=0 ); /* IE6-9 */
+    }
+
+    button:hover {
+      background: #ebf1f6; /* Old browsers */
+      background: linear-gradient(to bottom,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Trabalhando com dados</h1>
+
+  <!-- Chamando a função inicio ao clicar -->
+  <button onclick="inicio()">Clique para começar.</button>
+
+  <script>
+    function inicio() {
+      let nome = window.prompt("Qual é o seu nome?")
+      window.alert(`Olá, ${nome}! É um prazer te conhecer!`)
+    }
+  </script>
+  
+</body>
+</html>

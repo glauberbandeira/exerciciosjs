@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interagindo com botão- 02</title>
+
+  <style>
+    body {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    button {
+      width: 200px;
+      height: 100px;
+      margin-top: 20%;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border: 0;
+      border-radius: 30px;
+      background: linear-gradient(90deg, rgba(226,226,230,1) 0%, rgba(49,192,226,1) 44%, rgba(0,212,255,1) 81%);
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, rgba(233,233,236,1) 0%, rgba(49,192,226,1) 44%, rgba(80,226,255,1) 81%);
+    }
+  </style>
+</head>
+<body>
+  <!-- Chamar a função clicou no botão -->
+  <button onclick="clicou()">Clica em Mim!</button>
+
+
+  <script>
+    // Criar funcão clicou
+    function clicou() {
+      window.alert("Você clicou no botão!")
+    }
+  </script>
+  
+</body>
+</html>
