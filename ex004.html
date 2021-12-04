@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interagindo com partes do HTML (DOM)cument</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+  <style>
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+<body>
+  
+    <h1>Trabalhando com Dados v2.0</h1>
+
+    <button onclick="inicio()" class="btn btn-decoration">Clique para começar</button>
+
+    <section id="resultado">
+      <p>Aqui vai aparecer o resultado...</p>
+    </section>
+
+    <script>
+      function inicio() {
+        // prompt recebe o dado
+        let nome = window.prompt('Qual é o seu nome?')
+        // getElementById seleciona o id
+        let resp = window.document.getElementById('resultado')
+        // Também funciona com o comando abaixo
+        // let res = window.document.querySelector('section#resultado')
+        // inner Html mostra na tela html a resposta
+        resp.innerHTML = `<p>Olá <strong>${nome}</strong>! É um grande prazer te conhercer! &#x1F596;`
+      }
+    </script>
+</body>
+</html>
