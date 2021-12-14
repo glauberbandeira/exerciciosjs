@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Navegação</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <h1 id="titulo">Seja bem vindo(a)</h1>
+  
+  <aside>
+    <div  onclick="menuToggle()" id="menu-opener">
+      <img src="./images/menu-aberto.png" width="35" alt="">
+    </div>
+    <div id="menu-area">
+      <ul>
+        <li>Home</li>
+        <li>Sobre</li>
+        <li>Contato</li>
+      </ul>
+    </div>
+  </aside>
+
+  <div class="icones">
+    <div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/ilham-fitrotul-hayat" title="Ilham Fitrotul Hayat">Ilham Fitrotul Hayat</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+
+    <div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/stockio" title="Stockio">Stockio</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+  </div>
+
+
+
+  <script>
+
+    // Script resolvido no CSS
+    /*
+    function menuToggle() {
+      let menuArea = document.getElementById('menu-area');
+      // Preciso verificar a class menu-opened está presente
+      // Usando contains
+      if(menuArea.classList.contains('menu-opened') == true) {
+        menuArea.classList.remove('menu-opened');
+      } else {
+        menuArea.classList.add('menu-opened');
+      }
+    }
+    */
+
+    // Resolvendo no JS
+    function menuToggle() {
+      let menuArea = document.getElementById("menu-area");
+      if(menuArea.style.width === '200px') {
+        menuArea.style.width = '0px'
+      } else {
+        menuArea.style.width = '200px';
+      }
+    }
+  </script>
+</body>
+</html>
